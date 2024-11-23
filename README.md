@@ -196,7 +196,7 @@ Call somatic SNVs and indels via local assembly of haplotypes
 
 ```bash
 samtools view -H normal_JAK2.bam | grep RG | cut -f6 | sed -e "s/SM://g"
-
+```
 ```bash
 ./gatk-4.2.2.0/gatk Mutect2 \
 	-R chr9.fa \
